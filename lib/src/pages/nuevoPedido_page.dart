@@ -451,7 +451,8 @@ class _NuevoPedidoSeccionState extends State<NuevoPedidoSeccion> {
     itemCount: _clientes.length,
     itemBuilder: (BuildContext context, int index) {
       Cliente clienteLista = _clientes[index];
-      Duration diferencia = DateTime.now().subtract(Duration(hours: 4)).difference(clienteLista.ingreso);
+      //Duration diferencia = DateTime.now().subtract(Duration(hours: 4)).difference(clienteLista.ingreso);
+      Duration diferencia = DateTime.now().difference(clienteLista.ingreso);
       
       return Padding(
         padding: const EdgeInsets.only(top: 12.0, bottom: 12.0, left: 0, right: 0),

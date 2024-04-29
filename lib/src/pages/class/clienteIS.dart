@@ -12,7 +12,8 @@ class Cliente {
     required this.estatus,
     required this.edad,
     required this.genero,
-  }) : ingreso = DateTime.now().subtract(Duration(hours: 4));
+  //}) : ingreso = DateTime.now().subtract(Duration(hours: 4));
+  }) : ingreso = DateTime.now();
 
   Map<String, dynamic> toMap() {
     return {
